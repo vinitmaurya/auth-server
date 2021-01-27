@@ -12,9 +12,7 @@ app.use(cors())
 
 app.use(bodyParser.json())
 app.use('/api',api)
-app.get('/',function(req,res){
-    res.send('hello fro server')
-})
+
 
 app.listen(PORT,function(){
     console.log('Server running on localhost:'+PORT)
